@@ -25,11 +25,16 @@ int main() {
    int pontosTuristicos2;
 
    //===== ENTRADA CARTA 1=====
+   printf("===Cadastro da Carta 1===\n");
+   
    printf("Estado A-H: ");
    scanf(" %c", &Estado1);
    
    printf("Codigo da carta (Ex:A01): ");
    scanf("%s", codigo1);
+
+   printf("Nome da Cidade:");
+   scanf(" %[^\n]", nomeCidade1);
 
    printf("Populacao: ");
    scanf("%d", &populacao1);
@@ -44,6 +49,7 @@ int main() {
    scanf("%d", &PontosTuristicos1); 
 
 //===== ENTRADA CARTA2====
+   printf("=== Cadastro da carta 2===\n"); 
 
    printf("Estado A-H: ");
    scanf(" %c", &estado2);
@@ -52,7 +58,7 @@ int main() {
    scanf("%s", codigo2);
 
    printf("Nome da cidade: ");
-   scanf("%s[^\n] nomeCidade2");
+   scanf(" %[^\n]", nomeCidade2);
 
    printf("Populacao:");
    scanf("%d", &populacao2);
@@ -74,7 +80,7 @@ int main() {
    printf("Cidade: %s\n", nomeCidade1);
    printf("Populacao: %d\n", populacao1);
    printf("Area: %.2f\n", area1);
-   printf("PIB: %2.f\n", pib1);
+   printf("PIB: %.2f\n", pib1);
    printf("Pontos Turisticos: %d\n", PontosTuristicos1);
 
    printf("\n=== Carta 2===\n");
